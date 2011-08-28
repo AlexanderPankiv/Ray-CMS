@@ -1,0 +1,281 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+	height: 100%;
+}
+a {
+	color: blue;
+	outline: none;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	margin: 0 0 18px
+}
+img {
+	border: none;
+}
+input {
+	vertical-align: middle;
+}
+#wrapper {
+	width: 100%;
+	min-width: 1000px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	height: 25px;
+	background: #AABBCC;
+	padding: 5px 0px 0px 20px;
+	-moz-border-radius: 0px 0px 7px 7px;
+	-webkit-border-radius: 0px 0px 7px 7px;
+}
+
+#header a {
+	color: white;
+	font-weight: bold;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	width: 100%;
+	padding: 0 0 50px;
+	height: 1%;
+}
+#middle:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+#content {
+	padding: 0 0 0 270px;
+}
+
+
+/* Sidebar Left
+-----------------------------------------------------------------------------*/
+#sideLeft {
+	float: left;
+	width: 250px;
+	margin-left: -100%;
+	position: relative;
+	/*background: #B5E3FF;*/
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	margin: -50px auto 0;
+	min-width: 1000px;
+	height: 50px;
+	background: #BFF08E;
+}
+
+.modules_block {
+	margin: 5px 5px 20px 5px;
+	padding: 0 3px 3px 3px;
+	border: 1px solid black;
+	background: #e4e9ff;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+
+.modules_block_legend {
+	margin-left: 4px;
+	padding: 0 3px 0 3px;
+	cursor: default;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.opened_group {
+	padding-left: 18px;
+	background: url("../img/negative.gif") left center no-repeat;
+}
+
+.closed_group {
+	padding-left: 18px;
+	background: url("../img/positive.gif") left center no-repeat;
+}
+
+.admin_group_block {
+	margin-left: 5px;
+}
+
+.main_box {
+	margin: 5px;
+	border: 1px solid black;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+
+.main_box legend {
+	margin-left: 20px;
+	padding: 0 5px 0 5px;
+	cursor: default;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.error {
+	font-size: 18px;
+	color: red;
+}
+
+.col_left{
+	background-color: #E1E6EE;
+	padding: 3px;
+}
+
+.col_right{
+	background-color: #EAEFF0;
+	padding: 3px;
+}
+
+.col_right label{	float: none;
+	width: auto;
+	display: inline;}
+
+.col_right label{	float: none;
+	width: auto;
+	display: inline;
+}
+
+.col_right input, .col_right select, .col_right textarea{
+	margin: 0 3px 0 0;
+}
+
+.col_right input:focus, .col_right select:focus, .col_right textarea:focus{
+	margin: 0 3px 0 0;
+}
+
+th, .break{
+	font-size: 14px;
+}
+
+.break{
+	font-weight: bold;
+}
+
+.head {
+	background: #AABBCC;
+	padding: 5px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+
+
+.delete, .edit, .view
+{
+	padding-left: 20px;
+}
+
+.delete{
+	background: url("../img/icons/delete_16x16.png") left center no-repeat;
+}
+
+.edit{
+	background: url("../img/icons/edit.png") left center no-repeat;
+}
+
+.view{
+	background: url("../img/icons/lens_16x16.png") left center no-repeat;
+}
+
+.btnmain {
+	background: #AABBCC;
+	border: 1px solid black;
+	padding: 2px 5px 2px 5px;
+}
+
+.btnmain:hover {
+	border: 1px solid white;
+	color: white;
+}
+
+.admin_modules_list {
+	display: block;
+	text-decoration: none;
+}
+
+.admin_modules_list:hover {
+	background: #EAEFF0;
+}
+
+label{
+	margin-left: 3px;
+}
+
+.small {
+	font-size: 10px;
+}
+
+.wp-pagenavi {
+	font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	text-transform: uppercase;
+	clear: both;
+	font-weight: bold;
+	margin-top: 10px;
+        margin-bottom: 10px;
+	padding: 12px 12px;
+	background:#e5e5e5;
+}
+.wp-pagenavi a,
+.wp-pagenavi .current {
+	padding: 7px 11px 7px 11px;
+	background:#c7b290;
+	color:#FFF;
+	margin-left: 3px;
+}
+.wp-pagenavi a:hover,
+.wp-pagenavi .current {
+	color: #FFF;
+	background-color: #cccccc;
+}
+.wp-pagenavi .pages {
+	float: right;
+	font-weight:normal;
+	text-transform:none;
+	color:#808080;
+}
+
+#requests_report {	margin: 10px;
+}
+
+#requests_report span {	display: block;
+	margin-left: 10px;
+}
+
+.order_asc {
+	padding-left: 10px;	background: url("../img/icons/up.png") no-repeat left 50%;
+}
+
+.order_desc {	padding-left: 10px;
+	background: url("../img/icons/down.png") no-repeat left 50%;
+}

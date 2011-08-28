@@ -1,0 +1,16 @@
+hr {
+	background: transparent;
+	color: transparent;
+	border-left:  none;
+	border-right: none;
+	border-top:   none;
+	border-bottom: 1px dashed #000;
+}
+li{
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+}
+a{
+    font-style: normal;
+}
