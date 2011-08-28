@@ -33,11 +33,9 @@ class Tpl extends Smarty
         $this->assign('lang',$config['lang_arr']);
         $this->assign('url_conf',$config['url_conf']);
         $this->assign('url_conf_lang',$config['url_conf_lang']);
-        ob_start();
-        $this->display($tpl_name.'.tpl');
-        $ret=ob_get_contents();
-        ob_end_clean();
-        
+
+        $ret = $this->fetch($tpl_name.'.tpl');
+
         if(isset($this->cacheID)) writeCache($this->cacheID, $ret);
         
         echo $ret;
