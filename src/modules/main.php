@@ -4,10 +4,10 @@
     $content['title']=$config['lang_arr']['main'];
     
     $tpl = new Tpl();
+    $tpl->cacheID=md5('main');
     
-    $main_content=checkCache(md5('main'));
-	if($main_content){
-	   $tpl->data["key"]=$main_content;
+	if($tpl->CacheCheck()){
+	   echo $tpl->CacheCheck();
     }else{        
         $res = sql_do("
 					SELECT subcat.name_{$config['lang']} AS subcat_name, subcat.id as subcat_id,subcat.alias AS sub_alias, 
@@ -26,10 +26,9 @@
 			$cache = list_cat_subcat($cat_sel);
             
             $tpl->data['key']=$cache;
-       
-			writeCache(md5('main'), $cache);
 		}
+		$tpl->Show("main");
     }
     
-    $tpl->Show("main");
+   
 ?>

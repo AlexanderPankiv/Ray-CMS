@@ -152,12 +152,12 @@
 		$module_id = $module_id != '' ? $module_id : $module;
 		
 		if(file_exists('modules/'.$module_id.'.php')){
-			$result='';			
-			ob_start();
-			require_once('modules/'.$module_id.'.php');			
-			$result=ob_get_contents();
-			ob_end_clean();
-			return $result;
+			//$result='';			
+			//ob_start();
+			require_once('modules/'.$module_id.'.php');
+			//$result=ob_get_contents();
+			//ob_end_clean();
+			//return $result;
 		}else{
 			 $errors['get_content'.$module_id]='Module '.$module_id.' not found!';
 		}
