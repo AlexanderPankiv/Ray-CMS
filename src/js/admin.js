@@ -4,12 +4,12 @@ function slide_block(block_pref,id){
 	if($("#"+block_pref+id).is(":visible")){
 		$("#legend_"+id).removeClass('opened_group');
 		$("#legend_"+id).addClass('closed_group');
-		$("#"+block_pref+id).hide();
+		$("#"+block_pref+id).slideToggle('medium');;
 	}
 	else{
 		$("#legend_"+id).removeClass('closed_group');
 		$("#legend_"+id).addClass('opened_group');
-		$("#"+block_pref+id).show();
+		$("#"+block_pref+id).slideToggle('medium');
 	}
 }
 

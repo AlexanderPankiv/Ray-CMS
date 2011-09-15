@@ -39,7 +39,7 @@ input {
 -----------------------------------------------------------------------------*/
 #header {
 	height: 25px;
-	background: #AABBCC;
+	background: gray;
 	padding: 5px 0px 0px 20px;
 	-moz-border-radius: 0px 0px 7px 7px;
 	-webkit-border-radius: 0px 0px 7px 7px;
@@ -99,7 +99,7 @@ input {
 	margin: 5px 5px 20px 5px;
 	padding: 0 3px 3px 3px;
 	border: 1px solid black;
-	background: #e4e9ff;
+	background: #e6e6e6;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
 }
@@ -147,12 +147,12 @@ input {
 }
 
 .col_left{
-	background-color: #E1E6EE;
+	background-color: #eeeeee;
 	padding: 3px;
 }
 
 .col_right{
-	background-color: #EAEFF0;
+	background-color: #eeeeee;
 	padding: 3px;
 }
 

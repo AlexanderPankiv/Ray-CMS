@@ -1,6 +1,6 @@
 <?
 header('Last-Modified: ' . gmdate('r'));
-header('Content-Type: text/html; charset=windows-1251');
+header('Content-Type: text/html; charset=utf-8');
 header("Cache-Control: no-store, no-cache, must-revalidate");
 header("Pragma: no-cache");
 require_once('definitions.php');
@@ -36,7 +36,7 @@ if(($user['is_admin']==1)){
 					?></div></fieldset><?
 				}
 				?><fieldset class="modules_block">
-	            <legend class="modules_block_legend opened_group" id="legend_<?=$q['group']?>" onclick="slide_block('group_',<?=$q['group']?>)"><?=$q['group_name']?></legend>
+	            <div class="modules_block_legend opened_group" id="legend_<?=$q['group']?>" onclick="slide_block('group_',<?=$q['group']?>)"><?=$q['group_name']?></div>
 				<div class="admin_group_block" id="group_<?=$q['group']?>"><?
 				$j++;
 			}
@@ -49,9 +49,9 @@ if(($user['is_admin']==1)){
 	}
 	$left_frame=ob_get_contents();
 	ob_end_clean();
-	$data['title']='Адміністрування';
-	$data['logout']='Вийти з системи';
-	$data['to_home']='На головну';
+	$data['title']='Administration';
+	$data['logout']='Logout';
+	$data['to_home']='Home';
 	$data['left']=$left_frame;
 	$data['main']='';
 
@@ -87,7 +87,7 @@ if(($user['is_admin']==1)){
     	}
 	}
 	else{
-		$data['main'].='<fieldset class="main_box"><legend>Головна сторінка адміністрування</legend>';
+		$data['main'].='<fieldset class="main_box"><legend>Administration home</legend>';
 		$data['action']='admin.php?mod=admin_main';
 		$data['mod_mode']='edit';
     	ob_start();
