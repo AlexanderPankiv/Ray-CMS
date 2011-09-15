@@ -36,7 +36,7 @@ if(($user['is_admin']==1)){
 					?></div></fieldset><?
 				}
 				?><fieldset class="modules_block">
-	            <div class="modules_block_legend opened_group" id="legend_<?=$q['group']?>" onclick="slide_block('group_',<?=$q['group']?>)"><?=$q['group_name']?></div>
+	            <div class="modules_block_legend opened_group" id="legend_<?=$q['group']?>" onclick="slide_block('group_',<?=$q['group']?>)"><?=$q['group_name']?></div><hr/>
 				<div class="admin_group_block" id="group_<?=$q['group']?>"><?
 				$j++;
 			}
