@@ -4,7 +4,7 @@ header('Content-Type: text/html; charset=utf-8');
 header("Cache-Control: no-store, no-cache, must-revalidate");
 header("Pragma: no-cache");
 require_once('definitions.php');
-require_once('smarty/tpl.php');
+require_once('includes/smarty/tpl.php');
 
 $time_start=microtime_float();
 
