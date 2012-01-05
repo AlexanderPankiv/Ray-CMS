@@ -11,16 +11,18 @@ $time_start=microtime_float();
 global $module;
 $module=(!empty($_GET['mod'])) ? $_GET['mod'] : 'main';
 
+$tpl = new Tpl();
+$tpl->data['module'] = $module;
+$tpl->data['r_uri']=preg_replace('/^\/(?:rus|eng)/si','',$_SERVER['REQUEST_URI']);
 
-//$main = new Tpl();
-
-
+require_once('modules/navigation.php'); //if needed
+require_once('modules/'.$module.'.php');
 
 /////
 // Output the result
 /////
-
-parse_skin($skin_name);
+$tpl->Show('template');
+//not! parse_skin($skin_name);
 /////
 // Process errors and logz
 /////
