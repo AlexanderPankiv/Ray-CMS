@@ -21,7 +21,7 @@ require_once('modules/'.$module.'.php');
 /////
 // Output the result
 /////
-$tpl->Show('template');
+$tpl->Show('skin');
 //not! parse_skin($skin_name);
 /////
 // Process errors and logz

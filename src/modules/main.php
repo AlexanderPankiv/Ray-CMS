@@ -3,12 +3,12 @@
     
     $content['title']=$config['lang_arr']['main'];
     
-    $tpl = new Tpl();
-    $tpl->cacheID=md5('main');
+    //$tpl = new Tpl();
+    //$tpl->cacheID=md5('main');
     
-	if($tpl->CacheCheck()){
-	   echo $tpl->CacheCheck();
-    }else{        
+	//if($tpl->CacheCheck()){
+	//   echo $tpl->CacheCheck();
+    //}else{        
         $res = sql_do("
 					SELECT subcat.name_{$config['lang']} AS subcat_name, subcat.id as subcat_id,subcat.alias AS sub_alias, 
 					categories.name_{$config['lang']} AS cat_name, categories.alias 
@@ -26,9 +26,10 @@
 			$cache = list_cat_subcat($cat_sel);
             
             $tpl->data['key']=$cache;
+            $tpl->data['mms']="main.tpl";
 		}
-		$tpl->Show("main");
-    }
+		//$tpl->Show("main");
+    //}
     
    
 ?>
